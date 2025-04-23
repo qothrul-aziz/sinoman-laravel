@@ -599,7 +599,7 @@
                             <i class="fas fa-sign-in-alt mr-2"></i>Masuk
                         </button>
                         <div id="userDropdown" class="user-dropdown">
-                            <a href="pengaturan" class="flex items-center">
+                            <a href="Pengaturan" class="flex items-center">
                                 <i class="fas fa-cog mr-2"></i> Pengaturan
                             </a>
                             <div class="border-t border-gray-200 my-1"></div>

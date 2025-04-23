@@ -381,7 +381,7 @@
     <div class="main-content">
       <div class="content-header">
         <h1>Pengaturan Akun</h1>
-        <button class="btn-dashboard" onclick="window.location.href='index.php'">
+        <button class="btn-dashboard" onclick="window.location.href='/'">
           <i class="fas fa-arrow-left"></i> Kembali ke Dashboard
         </button>
       </div>
