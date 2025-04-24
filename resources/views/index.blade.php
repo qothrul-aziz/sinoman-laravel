@@ -904,9 +904,9 @@
             <p class="text-xl mb-8">Solusi terintegrasi dan transparan untuk sistem antrian perumahan bagi masyarakat berpenghasilan rendah (MBR).</p>
             <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <!-- Tombol Daftar Sekarang (akan disembunyikan saat login) -->
-                <button id="registerNowButton" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-50 transition flex items-center justify-center">
+                <a href="download" id="registerNowButton" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-50 transition flex items-center justify-center">
                     <i class="fas fa-user-plus mr-2"></i> Daftar Sekarang
-                </button>
+                </a>
                 
                 <!-- Info Antrian (selalu tampil) -->
                 <div class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg shadow-lg font-bold flex items-center queue-animation">
@@ -1680,13 +1680,13 @@ logoutButton.addEventListener('click', function() {
         const registrationForm = document.getElementById('registrationForm');
         
         // Open registration modal
-        registerNowButton.addEventListener('click', function() {
-            registrationModal.classList.add('active');
-            setTimeout(() => {
-                document.querySelector('.registration-content').style.transform = 'translateY(0)';
-                document.querySelector('.registration-content').style.opacity = '1';
-            }, 10);
-        });
+        // registerNowButton.addEventListener('click', function() {
+        //     registrationModal.classList.add('active');
+        //     setTimeout(() => {
+        //         document.querySelector('.registration-content').style.transform = 'translateY(0)';
+        //         document.querySelector('.registration-content').style.opacity = '1';
+        //     }, 10);
+        // });
         
         // Also from login modal and register now button
         showRegistration.addEventListener('click', function(e) {
@@ -1700,18 +1700,18 @@ logoutButton.addEventListener('click', function() {
         });
 
         // Register Now button click handler
-        registerNowButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            registrationModal.classList.add('active');
-            setTimeout(() => {
-                document.querySelector('.registration-content').style.transform = 'translateY(0)';
-                document.querySelector('.registration-content').style.opacity = '1';
-            }, 10);
+        // registerNowButton.addEventListener('click', function(e) {
+        //     e.preventDefault();
+        //     registrationModal.classList.add('active');
+        //     setTimeout(() => {
+        //         document.querySelector('.registration-content').style.transform = 'translateY(0)';
+        //         document.querySelector('.registration-content').style.opacity = '1';
+        //     }, 10);
             
-            // Reset form to first step
-            currentStep = 0;
-            showStep(currentStep);
-        });
+        //     // Reset form to first step
+        //     currentStep = 0;
+        //     showStep(currentStep);
+        // });
         
         // Close registration modal
         closeRegistration.addEventListener('click', function() {
